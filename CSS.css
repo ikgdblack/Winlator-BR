@@ -1,0 +1,219 @@
+body {
+  font-family: sans-serif;
+  background-color: #e0f2f1;
+  margin: 0;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.opcao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 400px;
+  padding: 12px 16px;
+  background: linear-gradient(to right, white, #0D47A1 );
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.opcao:hover {
+  background: linear-gradient(to right, white);
+  transform: scale(1.02);
+}
+
+.opcao .icon-left {
+  margin-right: 12px;
+}
+
+.opcao .text {
+  flex-grow: 1;
+}
+
+.opcao .icon-right {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.sidebar, .sidebar-direita {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: transparent;
+  width: 360px;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  left: 0;
+  padding-top: 50px;
+}
+
+.sidebar-direita {
+  right: 0;
+  padding-top: 50px;
+}
+
+.sidebar h2, .sidebar-direita h2 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.sidebar .opcao, .sidebar-direita .opcao {
+  width: 100%;
+  background-color: #a0dca3;
+  border-radius: 10px;
+  padding: 12px 20px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.sidebar .opcao:hover, .sidebar-direita .opcao:hover {
+  background-color: #90c995;
+}
+
+.sidebar .opcao span, .sidebar-direita .opcao span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.item {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
+}
+
+.negrito {
+  font-weight: bold;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .sidebar,
+  .sidebar-direita {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .sidebar .opcao,
+  .sidebar-direita .opcao {
+    margin: 8px 0;
+  }
+}
+
+
+
+body {
+  font-family: sans-serif;
+  background-color: #e0f2f1;
+  margin: 0;
+  padding-top: 60px; /* empurra o conteúdo para baixo da navbar */
+}
+
+body {
+  margin: 0;
+  padding-top: 60px;  /* Aumente ou diminua dependendo da altura do seu header */
+}
+
+
+body {
+  background-image: url('Windownslogo3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* opcional: fixa a imagem ao rolar */
+  font-family: sans-serif;
+  margin: 0;
+}
+
+header {
+  position: fixed;    /* Deixa o header fixo no topo da tela */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1e3a8a;
+  color: white;
+  padding: 10px 80px;
+  z-index: 998;        /* Fica abaixo do botão sanduíche (que é 999) */
+}
+
+
+.menu-toggle {
+  font-size: 28px;
+  cursor: pointer;
+  position: fixed;   /* Mantém fixo na tela mesmo rolando a página */
+  top: 10px;         /* Distância do topo */
+  left: 10px;        /* Distância da esquerda */
+  z-index: 999;      /* Garante que o botão fique sempre por cima de tudo */
+  background-color: #1e3a8a; /* Cor de fundo (opcional) */
+  color: white;      /* Cor do ícone */
+  padding: 8px 12px; /* Espaçamento interno para não ficar cortado */
+  border-radius: 5px; /* Cantos arredondados (opcional) */
+}
+
+
+nav {
+  margin-top: 50px;
+  margin-left: 10px;
+  
+}
+
+nav a {
+  display: block;
+  color: white;
+  padding: 8px 0;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #2563eb;
+  padding-left: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.menu-toggle:hover {
+  background-color: #2563eb;
+}
+
